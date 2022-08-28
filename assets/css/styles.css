@@ -116,6 +116,10 @@ input:focus-visible, textarea:focus-visible {
     border-color: var(--field-background-color);
 }
 
+.disabled {
+
+}
+
 /* HEADER */
 
 header {
@@ -374,6 +378,11 @@ section {
 #section-form .form-container form button:hover {
     background-color: var(--primary-color-contrast);
     color: var(--field-background-color);
+}
+
+#section-form .form-container form button.disabled:hover {
+    color: var(--primary-color-contrast);
+    background-color: var(--field-background-color);
 }
 
 footer {
