@@ -10,8 +10,8 @@
   </head>
   <body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
     <header aria-label="Cabeçalho da página.">
-      <audio id="music">
-        <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+      <audio id="music" autoplay="" repeat="">
+        <source id="source" src="./assets/musics/normal-world.mpeg" aria-details="Audio do site" />
       </audio>
       <div class="header-content">
         <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
@@ -113,20 +113,20 @@
           <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo</span></h3>
 
           <div class="form-container">
-            <form>
+            <form id="form">
               <label for="name">Nome Completo</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" required>
           
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" required>
           
               <label for="level">Level</label>
-              <input type="text" name="level" id="level">
+              <input type="number" name="level" id="level" required>
           
               <label for="character">Personagem</label>
-              <textarea name="character" cols="30" rows="10" id="character"></textarea>
+              <textarea name="character" cols="30" rows="10" id="character" required></textarea>
             
-              <button type="button" id="btnSubscribe">Me inscrever</button>
+              <button type="button" id="bttnSubscribe">Me inscrever</button>
             </form>
             
           </div>
@@ -139,10 +139,10 @@
         Projeto construído para fins didáticos, com o objetivo de colocar em
         prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._
       </p>
-      <img src="assets/images/footer/logo.svg" alt="">
+      <img src="assets/images/footer/logo.svg" alt="logo dio">
     </footer>
     
-    <script type="module" defer src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </body>
 </html>
